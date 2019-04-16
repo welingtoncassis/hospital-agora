@@ -1,0 +1,25 @@
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+    <ion-col >
+        <button type="button" ion-button block color="vermelho" (click)="callHospital(192)">Ligar para o SAMU &nbsp; <ion-icon name="call"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col >
+        <ion-list>
+            <ion-item *ngFor="let detalhe of detalhes">
+                <ion-avatar item-left>
+                    <img src="assets/icon/icon-29.png" alt="">
+                </ion-avatar>
+                <h3>{{detalhe.name}}</h3>
+                <p>End: {{detalhe.formatted_address}}</p>
+                <p>{{detalhe.aberto}}</p>
+                <button class="botao-de-ligar"type="button" ion-button block color="primary" (click)="callHospital(detalhe.formatted_phone_number)">Ligar &nbsp; <ion-icon name="call"></ion-icon></button>
+                <button id="uber" ion-button block (click)=" goHospital(detalhe.formatted_address)">Peça um UBER&nbsp; <ion-icon name="car"></ion-icon></button>  
+            </ion-item>
+          </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
