@@ -90,7 +90,7 @@
         <variable name="PLAY_SERVICES_VERSION" value="17.2.0" />
     </plugin>
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="5.0.4">
-        <variable name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyB_bQ4OkVqqGwWT4O3_IEtqnm5JBRxs9bQ}" />
+        <variable name="GOOGLE_API_KEY_FOR_ANDROID" value="{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}" />
         <variable name="OKHTTP_VERSION" value="3.12.0" />
     </plugin>
     <engine name="android" spec="7.1.4" />
